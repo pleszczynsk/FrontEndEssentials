@@ -8,13 +8,16 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 
 class CalcActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calc)
+
+       // if(savedInstanceState != null) {
+        //    calcSpinner.set
+       // }
 
         val calcSpinnerString = resources.getStringArray(R.array.calc_spinner_string)
         val calcSpinner = findViewById<Spinner>(R.id.calc_spinner)
@@ -31,16 +34,20 @@ class CalcActivity : AppCompatActivity() {
                     when (position) {
                         1 -> startActivity(Intent(this@CalcActivity, CalcPxToEm::class.java))
                         2 -> startActivity(Intent(this@CalcActivity, CalcEmToPx::class.java))
+                        3 -> startActivity(Intent(this@CalcActivity, CalcPxToRem::class.java))
+                        4 -> startActivity(Intent(this@CalcActivity, CalcRemToPx::class.java))
+                        5 -> startActivity(Intent(this@CalcActivity, CalcPxToPercent::class.java))
+                        6 -> startActivity(Intent(this@CalcActivity, CalcPercentToPx::class.java))
+                        7 -> startActivity(Intent(this@CalcActivity, CalcPxToVw::class.java))
+                        8 -> startActivity(Intent(this@CalcActivity, CalcVwToPx::class.java))
+                        9 -> startActivity(Intent(this@CalcActivity, CalcPxToVh::class.java))
+                        10 -> startActivity(Intent(this@CalcActivity, CalcVhToPx::class.java))
                     }
                 }
                 override fun onNothingSelected(parent: AdapterView<*>) {
                 }
             }
         }
-    //if(savedInstanceState != null) {
-     //   output_px_to_em?.text = savedInstanceState?.get("savedEquation1") as CharSequence?
-    //    output_em_to_px?.text = savedInstanceState?.get("savedEquation2") as CharSequence?
-   // }
 }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
@@ -85,18 +92,8 @@ class CalcActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-
-    //fun em_to_px(view: View)
-    //{
-      //  output_em_to_px.text = ( input_text_view3.text.toString().toDouble()/input_text_view4.text.toString().toDouble() ).toString()
+    //override fun onSaveInstanceState(@NonNull outState: Bundle) {
+     //   super.onSaveInstanceState(outState)
+     //   outState.putInt("calc_spinner", Spinner.getSelectedItemPosition())
     //}
-
-
-
-
-    override fun onSaveInstanceState(@NonNull outState: Bundle) {
-        super.onSaveInstanceState(outState)
-       // outState.putString("savedEquation1", output_px_to_em.text.toString())
-       // outState.putString("savedEquation2", output_em_to_px.text.toString())
-    }
 }

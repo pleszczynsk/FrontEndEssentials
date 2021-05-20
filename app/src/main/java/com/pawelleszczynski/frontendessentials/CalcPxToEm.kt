@@ -2,9 +2,11 @@ package com.pawelleszczynski.frontendessentials
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.calc_px_to_em.*
 
@@ -14,6 +16,13 @@ class CalcPxToEm : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calc_px_to_em)
+
+        if(savedInstanceState != null) {
+
+            output_px_to_em?.text = savedInstanceState?.get("saved1") as CharSequence?
+            input_text_view1?.text = Editable.Factory.getInstance().newEditable(savedInstanceState?.get("saved2") as CharSequence?)
+            input_text_view2?.text = Editable.Factory.getInstance().newEditable(savedInstanceState?.get("saved3") as CharSequence?)
+        }
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
     {
@@ -59,5 +68,12 @@ class CalcPxToEm : AppCompatActivity() {
     fun pxToEm(view: View)
     {
       output_px_to_em.text = ( input_text_view1.text.toString().toDouble()/input_text_view2.text.toString().toDouble() ).toString()
+    }
+
+    override fun onSaveInstanceState(@NonNull outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("saved1", output_px_to_em.text.toString())
+        outState.putString("saved2", input_text_view1.text.toString())
+        outState.putString("saved3", input_text_view2.text.toString())
     }
 }

@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcRemToPx">
+
+    <TextView
+        android:id="@+id/CalcRemToPx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc_rem_to_px"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalcRemToPx" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calc_default_px"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/input_text_view1"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:background="@color/c3"
+            android:textColorHint="@color/c2"
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calc_rem"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/input_text_view2"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:background="@color/c3"
+            android:textColorHint="@color/c2"
+            android:inputType="number" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/calc_calculate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_calculate"
+        android:onClick="emToPx"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstRow" />
+    <TextView
+        android:id="@+id/output_text_rem_to_px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc_px"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc_calculate1" />
+    <TextView
+        android:id="@+id/output_rem_to_px"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:background="@color/c3"
+        android:textColorHint="@color/c2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_text_rem_to_px" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

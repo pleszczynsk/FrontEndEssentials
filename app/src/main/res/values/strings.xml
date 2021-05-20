@@ -31,10 +31,26 @@
     <string name="calc_vh_to_px">vh to px</string>
     <string name="calc_Viewport_Height">vievport height</string>
     <string name="calc_vh">vh</string>
+    <string name="calc_px_to_vw">px to vw</string>
+    <string name="calc_vw_to_px">vw to px</string>
+    <string name="calc_vw">vw</string>
+    <string name="calc_rem">rem</string>
+    <string name="calc_rem_to_px">rem to px</string>
+    <string name="calc_px_to_rem">px to rem</string>
+    <string name="calc_text_px_to_vh">px to vh</string>
+    <string name="calc_text_px_to_percent">percent</string>
     <string-array name="calc_spinner_string">
         <item>Choose an option:</item>
         <item>Px to Em</item>
         <item>Em to Px</item>
+        <item>Px to Rem</item>
+        <item>Rem to Px</item>
+        <item>Px to Percent</item>
+        <item>Percent to Px</item>
+        <item>Px to Vw</item>
+        <item>Vw to Px</item>
+        <item>Px to Vh</item>
+        <item>Vh to Px</item>
     </string-array>
 
 </resources>

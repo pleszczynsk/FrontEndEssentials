@@ -37,6 +37,29 @@
         <activity android:name=".CalcEmToPx"
             android:parentActivityName=".CalcActivity">
         </activity>
+        <activity android:name=".CalcPxToRem"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcRemToPx"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcPxToPercent"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcPercentToPx"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcPxToVh"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcVhToPx"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcPxToVw"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcVwToPx"
+            android:parentActivityName=".CalcActivity">
+        </activity>
     </application>
-
 </manifest>

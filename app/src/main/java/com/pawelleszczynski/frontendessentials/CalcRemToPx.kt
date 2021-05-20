@@ -8,18 +8,18 @@ import android.view.MenuItem
 import android.view.View
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.calc_percent_to_px.*
+import kotlinx.android.synthetic.main.calc_px_to_rem.*
 
-class CalcPercentToPx : AppCompatActivity() {
+class CalcRemToPx : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.calc_percent_to_px)
+        setContentView(R.layout.calc_rem_to_px)
 
         if(savedInstanceState != null) {
 
-            output_percent_to_px?.text = savedInstanceState?.get("saved1") as CharSequence?
+            output_rem_to_px?.text = savedInstanceState?.get("saved1") as CharSequence?
             input_text_view1?.text = Editable.Factory.getInstance().newEditable(savedInstanceState?.get("saved2") as CharSequence?)
             input_text_view2?.text = Editable.Factory.getInstance().newEditable(savedInstanceState?.get("saved3") as CharSequence?)
         }
@@ -67,12 +67,12 @@ class CalcPercentToPx : AppCompatActivity() {
     }
     fun emToPx(view: View)
     {
-        output_percent_to_px.text = ( input_text_view1.text.toString().toDouble()/input_text_view2.text.toString().toDouble() ).toString()
+        output_rem_to_px.text = ( input_text_view1.text.toString().toDouble()/input_text_view2.text.toString().toDouble() ).toString()
     }
 
     override fun onSaveInstanceState(@NonNull outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putString("saved1", output_percent_to_px.text.toString())
+        outState.putString("saved1", output_rem_to_px.text.toString())
         outState.putString("saved2", input_text_view1.text.toString())
         outState.putString("saved3", input_text_view2.text.toString())
     }
