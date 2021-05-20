@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FrontEndEssentials</string>
+    <string name="menu_option_1">Home</string>
+    <string name="menu_option_2">Search</string>
+    <string name="menu_option_3">Min/Unmin</string>
+    <string name="menu_option_4">Graphics</string>
+    <string name="menu_option_5">Calculators</string>
+    <string name="menu_option_6">Templates</string>
+    <string name="main_button_1">Search</string>
+    <string name="main_button_2">Min/Unmin</string>
+    <string name="main_button_3">Graphics</string>
+    <string name="main_button_4">Calculators</string>
+    <string name="main_button_5">Templates</string>
+    <string name="main_text">Welcome Back!</string>
+    <string name="calc_text">I am a calculator!</string>
+    <string name="template_text">I am a template storage!</string>
+    <string name="search_text">I am a search tool!</string>
+    <string name="minunmin_text">I am a minifier/unminifier!</string>
+    <string name="graph_text">I am a graphic tool!</string>
+    <string name="btn_calculate">Calculate!</string>
+    <string name="calc_1">px to vw</string>
+    <string name="calc_px">px</string>
+    <string name="calc_em">em</string>
+    <string name="calc_text_px_to_em"><u>px to em</u></string>
+    <string name="calc_default_px">default px size</string>
+    <string name="calc_text_em_to_px"><u>em to px</u></string>
+    <string name="calc_text_px_to_rem"><u>px to rem</u></string>
+</resources>
