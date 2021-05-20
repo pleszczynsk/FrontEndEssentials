@@ -4,13 +4,37 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
 class MinUnminActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_minunmin)
+
+        val minifierSpinnerString = resources.getStringArray(R.array.minifier_spinner_string)
+        val minifierSpinner = findViewById<Spinner>(R.id.css_spinner)
+
+        if (minifierSpinner != null){
+            val adapter = ArrayAdapter(this,
+                    android.R.layout.simple_spinner_dropdown_item, minifierSpinnerString)
+            minifierSpinner.adapter = adapter
+
+            minifierSpinner.onItemSelectedListener = object :
+                    AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>,
+                                            view: View, position: Int, id: Long) {
+                    when (position) {
+                        1 -> startActivity(Intent(this@MinUnminActivity, CSSMin::class.java))
+                    }
+                }
+                override fun onNothingSelected(parent: AdapterView<*>) {
+                }
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean

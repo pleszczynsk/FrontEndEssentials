@@ -52,5 +52,12 @@
         <item>Px to Vh</item>
         <item>Vh to Px</item>
     </string-array>
+    <string-array name="minifier_spinner_string">
+        <item>Choose an option:</item>
+        <item>CSS Minifier</item>
+        <item>CSS Unminifier</item>
+        <item>JS Minifier</item>
+        <item>JS Unminifier</item>
+    </string-array>
 
 </resources>
