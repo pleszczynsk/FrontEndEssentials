@@ -25,4 +25,16 @@
     <string name="calc_default_px">default px size</string>
     <string name="calc_text_em_to_px"><u>em to px</u></string>
     <string name="calc_text_px_to_rem"><u>px to rem</u></string>
+    <string name="calc_percent_to_px">percent to px</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_vh_to_pxx">vh to px</string>
+    <string name="calc_vh_to_px">vh to px</string>
+    <string name="calc_Viewport_Height">vievport height</string>
+    <string name="calc_vh">vh</string>
+    <string-array name="calc_spinner_string">
+        <item>Choose an option:</item>
+        <item>Px to Em</item>
+        <item>Em to Px</item>
+    </string-array>
+
 </resources>

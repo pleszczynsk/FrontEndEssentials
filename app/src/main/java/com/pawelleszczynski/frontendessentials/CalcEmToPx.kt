@@ -4,14 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_calc.*
 
 class CalcEmToPx : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.calc_em_to_px)
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
     {
@@ -54,5 +56,8 @@ class CalcEmToPx : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
+    fun emToPx(view: View)
+    {
+      output_em_to_px.text = ( input_text_view1.text.toString().toDouble()/input_text_view2.text.toString().toDouble() ).toString()
+    }
 }

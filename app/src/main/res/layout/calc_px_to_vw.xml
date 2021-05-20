@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalcEmToPx">
+    tools:context=".">
 
     <TextView
-        android:id="@+id/CalcEmToPx"
+        android:id="@+id/CalcPercentToPx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calc_text_em_to_px"
+        android:text="@string/calc_percent_to_px"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,7 +25,7 @@
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CalcEmToPx" >
+        app:layout_constraintTop_toBottomOf="@+id/CalcPercentToPx" >
 
         <TextView
             android:id="@+id/text1"
@@ -49,7 +49,7 @@
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calc_em"
+            android:text="@string/calc_percent"
             android:gravity="center"
             android:textSize="20sp"
             android:textColor="@color/black" />

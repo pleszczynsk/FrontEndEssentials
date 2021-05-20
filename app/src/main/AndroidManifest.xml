@@ -30,6 +30,13 @@
         <activity android:name=".TemplateActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+
+        <activity android:name=".CalcPxToEm"
+            android:parentActivityName=".CalcActivity">
+        </activity>
+        <activity android:name=".CalcEmToPx"
+            android:parentActivityName=".CalcActivity">
+        </activity>
     </application>
 
 </manifest>
