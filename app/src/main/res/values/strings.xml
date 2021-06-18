@@ -13,9 +13,9 @@
     <string name="main_button_5">Templates</string>
     <string name="main_text">Welcome Back!</string>
     <string name="calc_text">I am a calculator!</string>
-    <string name="template_text">I am a template storage!</string>
-    <string name="search_text">I am a search tool!</string>
-    <string name="graph_text">I am a graphic tool!</string>
+    <string name="template_text">Sadly, the template storage was not implemented :c</string>
+    <string name="search_text">Choose the site you wish to browse:</string>
+    <string name="graph_text">Sadly, the graphics tool was not implemented :c</string>
     <string name="btn_calculate">Calculate!</string>
     <string name="calc_1">px to vw</string>
     <string name="calc_px">px</string>
@@ -47,6 +47,8 @@
     <string name="text_output_minify_js">Minified JavaScript</string>
     <string name="csstricks">CSS Tricks</string>
     <string name="w3s">W3Schools</string>
+    <string name="gfont">Google Font</string>
+    <string name="dafont">Dafont</string>
     <string-array name="calc_spinner_string">
         <item>Choose an option:</item>
         <item>Px to Em</item>

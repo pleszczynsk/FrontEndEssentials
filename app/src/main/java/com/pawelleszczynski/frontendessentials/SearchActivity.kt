@@ -24,6 +24,16 @@ class SearchActivity: AppCompatActivity() {
             openURL.data = Uri.parse("https://css-tricks.com/")
             startActivity(openURL)
         }
+        Gfonts.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://fonts.google.com/")
+            startActivity(openURL)
+        }
+        Dafont.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://www.dafont.com/")
+            startActivity(openURL)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
