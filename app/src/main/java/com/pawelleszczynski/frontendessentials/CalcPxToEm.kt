@@ -9,6 +9,8 @@ import android.view.View
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.calc_px_to_em.*
+import java.math.BigDecimal
+import java.math.RoundingMode
 
 class CalcPxToEm : AppCompatActivity() {
 
@@ -47,7 +49,7 @@ class CalcPxToEm : AppCompatActivity() {
                 }
                 R.id.option_3 ->
                 {
-                    startActivity(Intent(this, MinUnminActivity::class.java))
+                    startActivity(Intent(this, MinActivity::class.java))
                 }
                 R.id.option_4 ->
                 {
@@ -67,7 +69,7 @@ class CalcPxToEm : AppCompatActivity() {
     }
     fun pxToEm(view: View)
     {
-      output_px_to_em.text = ( input_text_view1.text.toString().toDouble()/input_text_view2.text.toString().toDouble() ).toString()
+      output_px_to_em.text = ( (BigDecimal(input_text_view2.text.toString().toDouble()/(input_text_view1.text.toString().toDouble())).setScale(2, RoundingMode.HALF_EVEN)).toString())
     }
 
     override fun onSaveInstanceState(@NonNull outState: Bundle) {

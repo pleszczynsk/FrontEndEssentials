@@ -2,7 +2,7 @@
     <string name="app_name">FrontEndEssentials</string>
     <string name="menu_option_1">Home</string>
     <string name="menu_option_2">Search</string>
-    <string name="menu_option_3">Min/Unmin</string>
+    <string name="menu_option_3">Minifiers</string>
     <string name="menu_option_4">Graphics</string>
     <string name="menu_option_5">Calculators</string>
     <string name="menu_option_6">Templates</string>
@@ -15,7 +15,6 @@
     <string name="calc_text">I am a calculator!</string>
     <string name="template_text">I am a template storage!</string>
     <string name="search_text">I am a search tool!</string>
-    <string name="minunmin_text">I am a minifier/unminifier!</string>
     <string name="graph_text">I am a graphic tool!</string>
     <string name="btn_calculate">Calculate!</string>
     <string name="calc_1">px to vw</string>
@@ -29,7 +28,7 @@
     <string name="calc_percent">%</string>
     <string name="calc_vh_to_pxx">vh to px</string>
     <string name="calc_vh_to_px">vh to px</string>
-    <string name="calc_Viewport_Height">vievport height</string>
+    <string name="calc_Viewport_Height">viewport height</string>
     <string name="calc_vh">vh</string>
     <string name="calc_px_to_vw">px to vw</string>
     <string name="calc_vw_to_px">vw to px</string>
@@ -39,6 +38,15 @@
     <string name="calc_px_to_rem">px to rem</string>
     <string name="calc_text_px_to_vh">px to vh</string>
     <string name="calc_text_px_to_percent">percent</string>
+    <string name="minunmin_css_min">CSS to minify:</string>
+    <string name="btn_sendMinify">Minify!</string>
+    <string name="text_output_minify">Minified CSS</string>
+    <string name="calc_Viewport_Width">Viewport Width</string>
+    <string name="min_text">Choose, what do you want to minify:</string>
+    <string name="minunmin_js_min">JavaScript to minify:</string>
+    <string name="text_output_minify_js">Minified JavaScript</string>
+    <string name="csstricks">CSS Tricks</string>
+    <string name="w3s">W3Schools</string>
     <string-array name="calc_spinner_string">
         <item>Choose an option:</item>
         <item>Px to Em</item>
@@ -55,9 +63,7 @@
     <string-array name="minifier_spinner_string">
         <item>Choose an option:</item>
         <item>CSS Minifier</item>
-        <item>CSS Unminifier</item>
         <item>JS Minifier</item>
-        <item>JS Unminifier</item>
     </string-array>
 
 </resources>

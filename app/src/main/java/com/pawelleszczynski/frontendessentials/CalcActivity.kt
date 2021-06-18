@@ -73,7 +73,7 @@ class CalcActivity : AppCompatActivity() {
                 }
                 R.id.option_3 ->
                 {
-                    startActivity(Intent(this, MinUnminActivity::class.java))
+                    startActivity(Intent(this, MinActivity::class.java))
                 }
                 R.id.option_4 ->
                 {

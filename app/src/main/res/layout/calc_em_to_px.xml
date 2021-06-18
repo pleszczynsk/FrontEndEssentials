@@ -62,7 +62,7 @@
             android:textSize="20sp"
             android:background="@color/c3"
             android:textColorHint="@color/c2"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
     </LinearLayout>
     <Button
         android:id="@+id/calc_calculate1"

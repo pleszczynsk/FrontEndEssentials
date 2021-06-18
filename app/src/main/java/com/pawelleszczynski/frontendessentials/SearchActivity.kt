@@ -1,16 +1,29 @@
 package com.pawelleszczynski.frontendessentials
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_search.*
 
 class SearchActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
+
+        W3s.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://www.w3schools.com/")
+            startActivity(openURL)
+        }
+
+        CSSTricks.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://css-tricks.com/")
+            startActivity(openURL)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean
@@ -36,7 +49,7 @@ class SearchActivity: AppCompatActivity() {
                 }
                 R.id.option_3 ->
                 {
-                    startActivity(Intent(this, MinUnminActivity::class.java))
+                    startActivity(Intent(this, MinActivity::class.java))
                 }
                 R.id.option_4 ->
                 {

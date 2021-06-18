@@ -10,25 +10,30 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 
-class MinUnminActivity: AppCompatActivity() {
+class MinActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_minunmin)
+        setContentView(R.layout.activity_min)
 
-        val minifierSpinnerString = resources.getStringArray(R.array.minifier_spinner_string)
-        val minifierSpinner = findViewById<Spinner>(R.id.css_spinner)
+        // if(savedInstanceState != null) {
+        //    calcSpinner.set
+        // }
 
-        if (minifierSpinner != null){
+        val calcSpinnerString = resources.getStringArray(R.array.minifier_spinner_string)
+        val calcSpinner = findViewById<Spinner>(R.id.min_spinner)
+
+        if (calcSpinner != null){
             val adapter = ArrayAdapter(this,
-                    android.R.layout.simple_spinner_dropdown_item, minifierSpinnerString)
-            minifierSpinner.adapter = adapter
+                android.R.layout.simple_spinner_dropdown_item, calcSpinnerString)
+            calcSpinner.adapter = adapter
 
-            minifierSpinner.onItemSelectedListener = object :
-                    AdapterView.OnItemSelectedListener {
+            calcSpinner.onItemSelectedListener = object :
+                AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>,
                                             view: View, position: Int, id: Long) {
                     when (position) {
-                        1 -> startActivity(Intent(this@MinUnminActivity, CSSMin::class.java))
+                        1 -> startActivity(Intent(this@MinActivity, MinCSSMin::class.java))
+                        2 -> startActivity(Intent(this@MinActivity, MinJSMin::class.java))
                     }
                 }
                 override fun onNothingSelected(parent: AdapterView<*>) {
@@ -60,7 +65,7 @@ class MinUnminActivity: AppCompatActivity() {
                 }
                 R.id.option_3 ->
                 {
-                    startActivity(Intent(this, MinUnminActivity::class.java))
+                    startActivity(Intent(this, MinActivity::class.java))
                 }
                 R.id.option_4 ->
                 {
@@ -78,4 +83,9 @@ class MinUnminActivity: AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+    //override fun onSaveInstanceState(@NonNull outState: Bundle) {
+    //   super.onSaveInstanceState(outState)
+    //   outState.putInt("calc_spinner", Spinner.getSelectedItemPosition())
+    //}
 }
