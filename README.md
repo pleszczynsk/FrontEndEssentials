@@ -30,6 +30,6 @@ Projekt zakłada stworzenie **aplikacji będącej zestawem najbardziej potrzebny
 | 1.04 - 15.04           | Implementacja szkieletu aplikacji, wstępne stworzenie funkcji programu, zadbanie o trwałość danych :heavy_check_mark: |
 | 15.04 - 6.05           | Rozbudowa funkcji, wstępny bugfixing :heavy_check_mark: |
 | <u>6.05</u>            | *Prezentacja wersji beta aplikacji* :heavy_check_mark: |
-| 6.05 - 10.06           | Dopracowywanie funkcji, bugfixing :arrow_backward: |
-| <u>10.06 lub 17.06</u> | *Prezentacja gotowego projektu*                              |
+| 6.05 - 10.06           | Dopracowywanie funkcji, bugfixing :heavy_check_mark: |
+| <u>10.06 lub 17.06</u> | *Prezentacja gotowego projektu* :heavy_check_mark: |
 
