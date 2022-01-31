@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="llMain" type="id" />
+    <item name="tvEmail" type="id" />
+    <item name="ivEdit" type="id" />
+    <item name="ivDelete" type="id" />
+</resources>

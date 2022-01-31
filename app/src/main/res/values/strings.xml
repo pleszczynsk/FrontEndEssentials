@@ -13,9 +13,9 @@
     <string name="main_button_5">Templates</string>
     <string name="main_text">Welcome Back!</string>
     <string name="calc_text">I am a calculator!</string>
-    <string name="template_text">Sadly, the template storage was not implemented :c</string>
+    <string name="template_text">Template storage is under construction!</string>
     <string name="search_text">Choose the site you wish to browse:</string>
-    <string name="graph_text">Sadly, the graphics tool was not implemented :c</string>
+    <string name="graph_text">The graphics tool is under construction!</string>
     <string name="btn_calculate">Calculate!</string>
     <string name="calc_1">px to vw</string>
     <string name="calc_px">px</string>
@@ -49,6 +49,18 @@
     <string name="w3s">W3Schools</string>
     <string name="gfont">Google Font</string>
     <string name="dafont">Dafont</string>
+    <string name="conversion_title">Choose the conversion:</string>
+    <string name="svg_to_png">SVG to PNG</string>
+    <string name="png_to_svg">PNG to SVG</string>
+    <string name="update_record">Update Template</string>
+    <string name="enter_name">Enter Template Name</string>
+    <string name="template_code">Template Code</string>
+    <string name="update">UPDATE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="name">Template Name</string>
+    <string name="add_template">ADD TEMPLATE</string>
+    <string name="all_the_inserted_templates">All the inserted templates</string>
+    <string name="no_templates_available">No templates in the database.</string>
     <string-array name="calc_spinner_string">
         <item>Choose an option:</item>
         <item>Px to Em</item>

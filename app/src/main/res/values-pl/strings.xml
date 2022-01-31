@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Niezbędnik Frontendowca</string>
+    <string name="menu_option_1">Strona Główna</string>
+    <string name="menu_option_2">Wyszukaj</string>
+    <string name="menu_option_3">Minifiery</string>
+    <string name="menu_option_4">Grafika</string>
+    <string name="menu_option_5">Kalkulatory</string>
+    <string name="menu_option_6">Szablony</string>
+    <string name="main_button_1">Wyszukaj</string>
+    <string name="main_button_2">Min/Odmin</string>
+    <string name="main_button_3">Grafika</string>
+    <string name="main_button_4">Kalkulatory</string>
+    <string name="main_button_5">Szablony</string>
+    <string name="main_text">Witaj Ponownie!</string>
+    <string name="calc_text">Jestem kalkulatorem!</string>
+    <string name="template_text">Przechowalnia szablonów znajduje się obecnie opracowaniu!</string>
+    <string name="search_text">Wybierz stronę, która Cię interesuje:</string>
+    <string name="graph_text">Narzędzie graficzne znajduje się obecnie w opracowaniu!</string>
+    <string name="btn_calculate">Kalkuluj!</string>
+    <string name="calc_1">px do vw</string>
+    <string name="calc_px">px</string>
+    <string name="calc_em">em</string>
+    <string name="calc_text_px_to_em"><u>px do em</u></string>
+    <string name="calc_default_px">domyślny rozmiar px</string>
+    <string name="calc_text_em_to_px"><u>em do px</u></string>
+    <string name="calc_text_px_to_rem"><u>px do rem</u></string>
+    <string name="calc_percent_to_px">percent do px</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_vh_to_pxx">vh do px</string>
+    <string name="calc_vh_to_px">vh do px</string>
+    <string name="calc_Viewport_Height">wysokość viewport</string>
+    <string name="calc_vh">vh</string>
+    <string name="calc_px_to_vw">px do vw</string>
+    <string name="calc_vw_to_px">vw do px</string>
+    <string name="calc_vw">vw</string>
+    <string name="calc_rem">rem</string>
+    <string name="calc_rem_to_px">rem do px</string>
+    <string name="calc_px_to_rem">px do rem</string>
+    <string name="calc_text_px_to_vh">px do vh</string>
+    <string name="calc_text_px_to_percent">procent</string>
+    <string name="minunmin_css_min">CSS do pomniejszenia:</string>
+    <string name="btn_sendMinify">Zmniejsz!</string>
+    <string name="text_output_minify">Zmniejszony CSS</string>
+    <string name="calc_Viewport_Width">Szerokość Viewport</string>
+    <string name="min_text">Wybierz, co chcesz pomniejszyć:</string>
+    <string name="minunmin_js_min">JavaScript do pomniejszenia:</string>
+    <string name="text_output_minify_js">Zmniejszony JavaScript</string>
+    <string name="csstricks">CSS Tricks</string>
+    <string name="w3s">W3Schools</string>
+    <string name="gfont">Google Font</string>
+    <string name="dafont">Dafont</string>
+    <string name="conversion_title">Wybierz konwersję:</string>
+    <string name="svg_to_png">SVG do PNG</string>
+    <string name="png_to_svg">PNG do SVG</string>
+    <string name="update_record">Aktualizuj Szablon</string>
+    <string name="enter_name">Wpisz nazwę szablonu</string>
+    <string name="template_code">Kod szablonu</string>
+    <string name="update">AKTUALIZUJ</string>
+    <string name="cancel">ANULUJ</string>
+    <string name="name">Nazwa szablonu</string>
+    <string name="add_template">DODAJ SZABLON</string>
+    <string name="all_the_inserted_templates">Wszystkie dodane szablony</string>
+    <string name="no_templates_available">Brak szablonów w bazie danych.</string>
+
+    <string-array name="calc_spinner_string">
+        <item>Wybierz opcję:</item>
+        <item>Px do Em</item>
+        <item>Em do Px</item>
+        <item>Px do Rem</item>
+        <item>Rem do Px</item>
+        <item>Px do Procent</item>
+        <item>Procent do Px</item>
+        <item>Px do Vw</item>
+        <item>Vw do Px</item>
+        <item>Px do Vh</item>
+        <item>Vh do Px</item>
+    </string-array>
+    <string-array name="minifier_spinner_string">
+        <item>Wybierz opcję:</item>
+        <item>Minifier CSS</item>
+        <item>Minifier JS</item>
+    </string-array>
+
+</resources>
